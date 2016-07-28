@@ -19,7 +19,7 @@ while True:
       else:
        break
 
-print (seq)                       # print final sequence
+print seq                         # print final sequence
       
 '''when using L as the entries, this code DOES NOT work and only prints out "MGLR" at the end. 
 This is because MGLR is not in the next dictionary created from L (meaning MGLR is not part of the solution sequence for L)
