@@ -4,7 +4,7 @@ L = ['AANLAQGHQSRPHQR','AHSHSYTPTSSQPRP','ANLAQGHQSRPHQRP','APQNNVVSAPTYYTN','AP
 
 
 next={}
-for s in LL:                      # when using L as the entries, this code DOES NOT work and only prints out "MGLR" at the end. This is because MGLR is not in the next dictionary created from L (meaning MGLR is not part of the solution sequence for L)
+for s in LL:                        
   for i in range(0,len(s)-4):     # taking all elements in LL and creating a dictionary of all possible four letter sequences with the subsequent fifth letter becoming the entry value
     next[s[i:i+4]]=s[i+4]
 
@@ -21,3 +21,8 @@ while True:
 
 print (seq)                       # print final sequence
       
+'''when using L as the entries, this code DOES NOT work and only prints out "MGLR" at the end. 
+This is because MGLR is not in the next dictionary created from L (meaning MGLR is not part of the solution sequence for L)
+HOWEVER, even when putting the correct beginning sequence "MSKD" the sequence still comes up with some errors
+I am currently trying to figure out why there's an error
+ '''
